@@ -1,0 +1,28 @@
+<!-- src/app/components/surgeon-list/surgeon-list.component.html -->
+<div class="container">
+  <h1>List of Surgeons</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Specialty</th>
+        <th>Interventions</th>
+        <th>Favorite Anesthetist</th>
+        <th>Favorite Nurse</th>
+        <th>Frequent Room</th>
+        <th>Frequent Act</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let surgeon of surgeons">
+        <td>{{ surgeon.surgeon }}</td>
+        <td>{{ surgeon.specialty }}</td>
+        <td>{{ surgeon.intervention }}</td>
+        <td>{{ surgeon.anesthsiste }}</td>
+        <td>{{ surgeon.nurse1 }}, {{ surgeon.nurse2 }}</td>
+        <td>{{ surgeon.roomNumber }}</td>
+        <td>{{ surgeon.intervention }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
